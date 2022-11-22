@@ -22,6 +22,12 @@ public class Main {
             }
         }
 
+        System.out.println("""
+                Welcome to the Tic-Tac-Toe!
+                To start the game, just enter the coordinates in this format: 'X Y', without quotes,
+                where X is a number of a row (from UP to DOWN) and Y is a number of a column (from LEFT to RIGHT).
+                P.S. the numeration is from to 1""");
+
         do {
             counter++;
             emptySpaces = false;
@@ -93,6 +99,8 @@ public class Main {
 
 
             //scanning new coordinates
+            System.out.println("Please enter the coordinates of your next move:");
+
             do {
                 if (scanner.hasNextInt()) {
                     coordI = scanner.nextInt();
